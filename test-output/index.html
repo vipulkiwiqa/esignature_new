@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Med_Max_-_Test_Suite_1">
-              <span class="suite-name border-passed">Med Max - Test Suite 1</span>
+              <span class="suite-name border-failed">Med Max - Test Suite 1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Med_Max_-_Test_Suite_1" class="hide-methods passed suite-Med_Max_-_Test_Suite_1"> (hide)</a> <!-- hide-methods passed suite-Med_Max_-_Test_Suite_1 -->
-                      <a href="#" panel-name="suite-Med_Max_-_Test_Suite_1" class="show-methods passed suite-Med_Max_-_Test_Suite_1"> (show)</a> <!-- show-methods passed suite-Med_Max_-_Test_Suite_1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Med_Max_-_Test_Suite_1" class="hide-methods failed suite-Med_Max_-_Test_Suite_1"> (hide)</a> <!-- hide-methods failed suite-Med_Max_-_Test_Suite_1 -->
+                      <a href="#" panel-name="suite-Med_Max_-_Test_Suite_1" class="show-methods failed suite-Med_Max_-_Test_Suite_1"> (show)</a> <!-- show-methods failed suite-Med_Max_-_Test_Suite_1 -->
                     </span>
-                    <div class="method-list-content passed suite-Med_Max_-_Test_Suite_1">
+                    <div class="method-list-content failed suite-Med_Max_-_Test_Suite_1">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Med_Max_-_Test_Suite_1" title="com.index.GeneralIndex" hash-for-method="register_med_max">register_med_max</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Med_Max_-_Test_Suite_1 -->
+                    </div> <!-- method-list-content failed suite-Med_Max_-_Test_Suite_1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Med_Max_-_Test_Suite_1" class="panel Med_Max_-_Test_Suite_1">
-          <div class="suite-Med_Max_-_Test_Suite_1-class-passed">
+          <div class="suite-Med_Max_-_Test_Suite_1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.index.GeneralIndex</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,10 +127,28 @@
                   <a name="register_med_max">
                   </a> <!-- register_med_max -->
                   <span class="method-name">register_med_max</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2985)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:306)
+	at java.lang.String.valueOf(String.java:2985)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:267)
+	at com.init.Commonnew.clickonelementlink(Commonnew.java:1342)
+	at com.indexpage.GeneralIndexpage.medmax_click_on_register(GeneralIndexpage.java:2165)
+	at com.index.GeneralIndex.register_med_max(GeneralIndex.java:1336)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Med_Max_-_Test_Suite_1-class-passed -->
+          </div> <!-- suite-Med_Max_-_Test_Suite_1-class-failed -->
         </div> <!-- panel Med_Max_-_Test_Suite_1 -->
         <div panel-name="test-xml-Med_Max_-_Test_Suite_1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -143,7 +161,7 @@
 &lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Med Max - Test Suite 1&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;selenium.port&quot; value=&quot;4444&quot;/&gt;
   &lt;parameter name=&quot;selenium.host&quot; value=&quot;localhost&quot;/&gt;
-  &lt;parameter name=&quot;selenium.browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;selenium.browser&quot; value=&quot;Android_Chrome&quot;/&gt;
   &lt;parameter name=&quot;selenium.url&quot; value=&quot;http://medmaxpharmacy.com/&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.utility.TestListener&quot;/&gt;
@@ -202,12 +220,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'register_med_max')
 data.setCell(0, 2, 'com.index.GeneralIndex')
-data.setCell(0, 3, 34320);
+data.setCell(0, 3, 80509);
 window.suiteTableData['Med_Max_-_Test_Suite_1']= { tableData: data, tableDiv: 'times-div-Med_Max_-_Test_Suite_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Med_Max_-_Test_Suite_1">
               </div> <!-- times-div-Med_Max_-_Test_Suite_1 -->
             </div> <!-- times-div -->
@@ -224,28 +242,8 @@ return data;
                 <span class="reporter-method-output"><strong> <h3 style="color:DarkViolet"> To verify that user is able to Register</h3> </strong></span>
                 <span class="reporter-method-output"><strong> <h3 style="color:DarkViolet"> --------------------------------------------------------------------------</h3> </strong></span>
                 <span class="reporter-method-output"><br><strong>Step 1. open : http://medmaxpharmacy.com/</strong></br></span>
-                <span class="reporter-method-output"></br>--->  Home page is open  <---</span>
-                <span class="reporter-method-output"></br><br><Strong><font color=#008000>Pass</font></strong></br></span>
                 <span class="reporter-method-output"><br><strong>Step 2. Click on Register Button</strong></br></span>
-                <span class="reporter-method-output"><br><strong>Step 3. Enter Details for the Registration</strong></br></span>
-                <span class="reporter-method-output"></br>=======> Enter Your Personal Details <=======</span>
-                <span class="reporter-method-output"></br>-------> Entered Firstname <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Lastname <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Email Address <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Phone Number <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Fax Number <-------</span>
-                <span class="reporter-method-output"></br>=======> Enter Your Address Details <=======</span>
-                <span class="reporter-method-output"></br>-------> Entered Company Name <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered First Line of the Address <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Second Line of the Address <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered City <-------</span>
-                <span class="reporter-method-output"></br>-------> Entered Post Code <-------</span>
-                <span class="reporter-method-output"></br>-------> Select the Country <-------</span>
-                <span class="reporter-method-output"></br>-------> Select the state <-------</span>
-                <span class="reporter-method-output"></br>=======> Enter Password Details <=======</span>
-                <span class="reporter-method-output"></br>-------> Entered password <-------</span>
-                <span class="reporter-method-output"></br>-------> Select confirm password <-------</span>
-                <span class="reporter-method-output"></br>-------> Clicked on the Terms and Conditions <-------</span>
+                <span class="reporter-method-output"><br> <b>Please look to the screenshot - </b></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,15 +301,17 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void com.index.GeneralIndex.register_med_max(), org.testng.TestRunner@13a5fe33)</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">register_med_max</span>
-                <span class="method-start">16721 ms</span>
+                <span class="method-start">49718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=register_med_max status=SUCCESS method=GeneralIndex.register_med_max()[pri:0, insta...)</span>
-                <span class="method-start">51041 ms</span>
+                <span class="method-name">tearDown([TestResult name=register_med_max status=FAILURE method=GeneralIndex.register_med_max()[pri:0, insta...)</span>
+                <span class="method-start">130247 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="64.391" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="64.469" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="F:\e-Signature_new\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4625961277964636144.tmp"/>
+    <property name="classworlds.conf" value="F:\e-Signature_new\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6588158866489758691.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0\bin;E:\Git\cmd;D:\vipul\Mobile_automation\android-sdk-windows\platform-tools;D:\vipul\Mobile_automation\android-sdk-windows\build-tools\25.0.0;F:\apache-maven-3.5.4\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,5 +60,34 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="register_med_max" classname="com.index.GeneralIndex" time="34.319"/>
+  <testcase name="register_med_max" classname="com.index.GeneralIndex" time="5.047">
+    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.149&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0-ea&apos;&#10;Driver info: driver.version: RemoteWebDriver&#10;Capabilities {autoGrantPermissions: true, browserName: Chrome, databaseEnabled: false, desired: {autoGrantPermissions: true, browserName: Chrome, deviceName: TA09407DYT, newCommandTimeout: 600, noReset: false, platformName: Android, platformVersion: 6.0, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: motorola, deviceModel: XT1700, deviceName: HKE6GZ7D, deviceScreenSize: 720x1280, deviceUDID: HKE6GZ7D, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: false, platform: LINUX, platformName: LINUX, platformVersion: 6.0, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}&#10;Session ID: fe81c801-13a2-4973-8de0-be40f17f74f5" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DELL-PC', ip: '192.168.1.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0-ea'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {autoGrantPermissions: true, browserName: Chrome, databaseEnabled: false, desired: {autoGrantPermissions: true, browserName: Chrome, deviceName: TA09407DYT, newCommandTimeout: 600, noReset: false, platformName: Android, platformVersion: 6.0, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: motorola, deviceModel: XT1700, deviceName: HKE6GZ7D, deviceScreenSize: 720x1280, deviceUDID: HKE6GZ7D, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: false, platform: LINUX, platformName: LINUX, platformVersion: 6.0, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: fe81c801-13a2-4973-8de0-be40f17f74f5
+	at com.index.GeneralIndex.register_med_max(GeneralIndex.java:1318)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at com.index.GeneralIndex.register_med_max(GeneralIndex.java:1318)
+</failure>
+    <system-out><![CDATA[[TestNG] [WARN] Could not find reporte class : listenReport.Reporter
+...
+... TestNG 6.8.9beta by Cédric Beust (cedric@beust.com)
+...
+
+======Abstract Page======
+======Abstract Page======
+TestData URL :: http://medmaxpharmacy.com/
+Current Window Handle ID : --->>CDwindow-0
+Current Xml Suite is:---->Med Max - Test Suite 1
+To verify that user is able to Register
+--------------------------------------------------------------------------
+Step 1. open : http://medmaxpharmacy.com/
+]]></system-out>
+    <system-err><![CDATA[Sep 27, 2018 12:15:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
 </testsuite>

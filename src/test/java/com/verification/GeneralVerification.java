@@ -333,6 +333,7 @@ public class GeneralVerification extends AbstractPage {
 	public boolean verifyesignaturehomepage() {
 		// TODO Auto-generated method stub
 		Common.pause(5);
+		Common.pause(15); // for mobile 
 		
 		String url = driver.getCurrentUrl();
 		
@@ -346,6 +347,7 @@ public class GeneralVerification extends AbstractPage {
 	public boolean esign_loginpageverification() {
 		// TODO Auto-generated method stub
 		Common.pause(10);
+		Common.pause(15); // for mobile
 		
 		WebElement welcomemsg = driver.findElement(By.xpath("//span[contains(text(),'Welcome DEV09 Account')]"));
 

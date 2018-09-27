@@ -3,6 +3,7 @@ package com.init;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -237,7 +238,46 @@ public class SeleniumInit {
 		
 			driver = new ChromeDriver();
 			//driver = new RemoteWebDriver(remote_grid, capability);
-		} else if (targetBrowser.contains("safari")) {
+		} 
+		//Added for mobile 
+		
+		else if (targetBrowser.contains("Android_Chrome")) {
+			   
+			   DesiredCapabilities cap= new DesiredCapabilities();
+			   URL remote_grid1 = null ;
+			   try {
+			   remote_grid1 = new URL("http://" + "localhost" + ":" + "4723" + "/wd/hub");
+			   } catch (MalformedURLException e) {
+			   // TODO Auto-generated catch block
+			   e.printStackTrace();
+			   }
+			   cap=new DesiredCapabilities();
+			   //File apkFile = new File("app/Notepad.apk");
+			   //File apkFile = new File("app/Facebook.apk");
+			  // File apkFile = new File("app/redBus Online Bus Ticket Booking Hotel Booking_v6.6.5_apkpure.com.apk");
+
+			  // cap.setCapability("app",apkFile.getAbsolutePath());
+			   cap.setCapability("platformVersion", "6.0");
+			   cap.setCapability("platformName", "Android");
+			   cap.setCapability("deviceName", "TA09407DYT");
+			   cap.setCapability("browserName", "Chrome");
+			   /*cap.setCapability("appPackage", "com.app.workpulse.task");
+			   cap.setCapability("appActivity", "com.workpulse.task.SplashActivity");*/
+			   cap.setCapability("autoGrantPermissions", true);
+			   cap.setCapability("noReset", false);//change by vipul
+			   cap.setCapability("newCommandTimeout", 600);
+			   cap.setCapability("unicodeKeyboard", true);
+			   cap.setCapability("resetKeyboard", true);
+
+			   //androidDriver = Factory.createAndroidDriver(remote_grid, cap);
+			  // driver = new AndroidDriver<MobileElement>(remote_grid1, cap);
+			   driver = new RemoteWebDriver(remote_grid1, cap);
+			   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			   
+			  }
+		
+		//Above function added for the mobile 
+		else if (targetBrowser.contains("safari")) {
 
 			// System.setProperty("webdriver.safari.driver","/Users/jesus/Desktop/SafariDriver.safariextz");
 			// driver = new SafariDriver();
@@ -253,6 +293,7 @@ public class SeleniumInit {
 			// profile);
 			this.driver = new SafariDriver(capability);
 		}
+		
 
 		generalIndexpage = new GeneralIndexpage(driver);
 		generalVerification = new GeneralVerification(driver);
@@ -261,7 +302,7 @@ public class SeleniumInit {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(testUrl);
 		System.out.println("TestData URL :: " + testUrl);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize(); // keep off for the mobile
 
 		currentWindowHandle = driver.getWindowHandle();
 		System.out.println("Current Window Handle ID : --->>" + currentWindowHandle);

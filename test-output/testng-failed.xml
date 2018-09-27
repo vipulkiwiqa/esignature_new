@@ -3,7 +3,7 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Med Max - Test Suite 1]" parallel="tests">
   <parameter name="selenium.port" value="4444"/>
   <parameter name="selenium.host" value="localhost"/>
-  <parameter name="selenium.browser" value="chrome"/>
+  <parameter name="selenium.browser" value="Android_Chrome"/>
   <parameter name="selenium.url" value="http://medmaxpharmacy.com/"/>
   <listeners>
     <listener class-name="com.utility.TestListener"/>

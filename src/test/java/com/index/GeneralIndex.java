@@ -1091,9 +1091,9 @@ int step=1;
 
 	Common.logcase("--------------------------------------------------------------------------");
 	
-	Common.logstep("Step "+ (step++) +". open : https://go-env-syd1.clickandsign.net:11443/dashboard/");
+	Common.logstep("Step "+ (step++) +". open : https://go-env-syd9.clickandsign.net:19443/dashboard/");
 	
-	
+	// keep this in comment to run for the mobile
 	boolean tf = generalVerification.verifyesignaturehomepage();
 	
 	if(tf){
@@ -1315,7 +1315,7 @@ int step=1;
 	Common.logstep("Step "+ (step++) +". open : http://medmaxpharmacy.com/");
 	
 	
-	boolean tf = generalVerification.verifymedmaxhomepage();
+	/*boolean tf = generalVerification.verifymedmaxhomepage();
 	
 	if(tf){
 
@@ -1329,7 +1329,7 @@ int step=1;
 	   {   Common.log("--->  Home page is not open  <---");
 	       Common.logStatus("Fail");
 	       Assert.assertTrue(false,"--->  Home page is not open  <---");
-	  } 
+	  } */
 	
 	 Common.logstep("Step "+ (step++) +". Click on Register Button");
 	 
