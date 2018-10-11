@@ -203,7 +203,9 @@ public class GeneralIndexpage extends AbstractPage {
 	@FindBy(xpath="//label[contains(text(),'Last Name*')]/../input[position()=last()-1]")private WebElement emailaddress_esign;
 	@FindBy(xpath="//label[contains(text(),'Last Name*')]/../input[position()=last()]")private WebElement mobile_esign;
 	
-	@FindBy(xpath="//span[contains(text(),'Transfer of Land')]/..//input")private List<WebElement> numberofdocuments_esign;
+	@FindBy(xpath="//span[@class='tablecell']/.//input")private List<WebElement> numberofdocuments_esign;
+	@FindBy(xpath="//span[@class='tablecell nowrap']/.//input")private List<WebElement> numberofdocuments_required_esign;
+	
 	@FindBy(xpath="//span/button[@title='create']")private WebElement packagecreatebutton;
 	
 	@FindBy(xpath="//div//span[contains(text(),'Cloud Services Agreement')]/../input")private WebElement cloudserviceaggrement_esign;
@@ -1521,16 +1523,24 @@ public GeneralVerification esign_enterphonenumber() {
 	return new GeneralVerification(driver);
 }
 
+
+//@FindBy(xpath="//span[@class='tablecell']")private List<WebElement> numberofdocuments_esign;
+//@FindBy(xpath="//span[@class='tablecell nowrap']")private List<WebElement> numberofdocuments_required_esign;
+
 public GeneralVerification esign_numberofducuments() {
 	// TODO Auto-generated method stub
 	
 	Common.pause(2);
 	
 	int i = Integer.parseInt(TestData.numberofducuments());
-	if(i==0)
+	numberofdocuments=i;
+	Common.log("Number of Documents Attached :"+i);
+	Common.log("Number of Options for the Attachment :"+numberofdocuments_esign.size());
+	/*if(i==0)
 	i=10;
 	int count = i/2;
-	
+	Common.log("Number of Options for the Attachment :"+numberofdocuments_esign.size());
+	*/
 	for(WebElement document: numberofdocuments_esign){
 		
 		if(i>0){
@@ -1541,8 +1551,18 @@ public GeneralVerification esign_numberofducuments() {
 		i--;
 	}
 	
-   numberofdocuments=count;
-   Common.log("Number of Documents Attached :"+count);
+ i = numberofdocuments;
+for(WebElement document: numberofdocuments_required_esign){
+		
+		if(i>0){
+			document.click();
+		}
+		else
+			break;
+		i--;
+	}
+	
+   
    return new GeneralVerification(driver);
 }
 
@@ -1921,7 +1941,7 @@ public GeneralVerification click_on_email_sign() {
 	// TODO Auto-generated method stub
 	Common.pause(5);
 	System.out.println("package name : "+packagereference);
-	WebElement click_on_email_esign = driver.findElement(By.xpath("//li//div[contains(text(),'Loan documents are ready for reference number : "+packagereference+"')]"));
+	WebElement click_on_email_esign = driver.findElement(By.xpath("//*[contains(text(),'Loan documents are ready for reference number : "+packagereference+"')]"));
 	click_on_email_esign.click();
 	return new GeneralVerification(driver);
 }
@@ -2067,6 +2087,7 @@ public GeneralVerification click_on_OK_sign() {
 	Common.pause(5);
 	//click_to_sign_esign.click();
 	Commonnew.clickonelement(driver, click_on_OK_sign, 5);
+	Common.pause(5);
 	return new GeneralVerification(driver);
 }
 
@@ -2076,7 +2097,7 @@ public GeneralVerification click_on_Rerurn_Home_sign() {
 	// TODO Auto-generated method stub
 	Common.pause(25);
 	Common.moveToElementByJs(driver, click_on_Return_Home);
-	Common.pause(5);
+	Common.pause(10);
 	//click_to_sign_esign.click();
 	Commonnew.clickonelement(driver, click_on_Return_Home, 5);
 	return new GeneralVerification(driver);

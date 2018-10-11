@@ -302,7 +302,7 @@ public class SeleniumInit {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(testUrl);
 		System.out.println("TestData URL :: " + testUrl);
-		//driver.manage().window().maximize(); // keep off for the mobile
+		driver.manage().window().maximize(); // keep off for the mobile
 
 		currentWindowHandle = driver.getWindowHandle();
 		System.out.println("Current Window Handle ID : --->>" + currentWindowHandle);

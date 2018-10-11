@@ -492,7 +492,9 @@ public class GeneralVerification extends AbstractPage {
           for(int i=1;i<=5;i++){
            Common.pause(10);	
            try {
-        	   WebElement click_on_email_esign1 = driver.findElement(By.xpath("//li//div[contains(text(),'Loan documents are ready for reference number : "+packagereference+"')]")); 
+        	   WebElement click_on_email_esign1 = driver.findElement(By.xpath(" //*[contains(text(),'Loan documents are ready for reference number : "+packagereference+"')]")); 
+        	   
+        	
         	   if(click_on_email_esign1.isDisplayed()){
             	   return true;}
         	  } catch (Exception e) {
@@ -531,12 +533,16 @@ public class GeneralVerification extends AbstractPage {
 	Iterator<String> it = handle.iterator();
 	String thirdwindow = it.next();
     driver.switchTo().window(thirdwindow);
+    Common.pause(2);
     driver.navigate().refresh();
-	Common.pause(15);
+	Common.pause(20);
 	WebElement searchtxt = driver.findElement(By.xpath("//input[@type='search']"));
 	searchtxt.clear();
 	Common.log("package name :"+generalIndexpage.packagereference);
 	searchtxt.sendKeys(generalIndexpage.packagereference);
+	Common.pause(5);
+	driver.navigate().refresh();
+	Common.pause(10);
 	WebElement caretedpackagename_esign = driver.findElement(By.xpath("//td[contains(text(),'"+generalIndexpage.packagereference+"')]"));
 	WebElement statuscheck = driver.findElement(By.xpath("//span[@title='COMPLETED']"));
 	Common.log(caretedpackagename_esign.getText());

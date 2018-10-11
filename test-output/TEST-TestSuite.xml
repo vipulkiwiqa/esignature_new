@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="64.469" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="722.988" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0\jre\bin"/>
-    <property name="java.vm.version" value="25.0-b55"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_161\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="F:\e-Signature_new\esignature"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,18 +17,18 @@
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="F:\e-Signature_new\esignature"/>
-    <property name="java.runtime.version" value="1.8.0-ea-b113"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_161\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="F:\e-Signature_new\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6588158866489758691.tmp"/>
+    <property name="classworlds.conf" value="F:\e-Signature_new\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1560052496783104050.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0\bin;E:\Git\cmd;D:\vipul\Mobile_automation\android-sdk-windows\platform-tools;D:\vipul\Mobile_automation\android-sdk-windows\build-tools\25.0.0;F:\apache-maven-3.5.4\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0\bin;E:\Git\cmd;D:\vipul\Mobile_automation\android-sdk-windows\platform-tools;D:\vipul\Mobile_automation\android-sdk-windows\build-tools\25.0.0;F:\apache-maven-3.5.4\bin;C:\Users\DELL\AppData\Local\GitHubDesktop\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -42,15 +42,15 @@
     <property name="java.class.path" value="/C:/Users/DELL/Desktop/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_161"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0-ea"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0\jre\classes"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_161\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_161\lib\resources.jar;C:\Program Files\Java\jre1.8.0_161\lib\rt.jar;C:\Program Files\Java\jre1.8.0_161\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_161\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_161\lib\jce.jar;C:\Program Files\Java\jre1.8.0_161\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_161\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_161\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="F:\e-Signature_new\esignature\EMBEDDED"/>
     <property name="file.separator" value="\"/>
@@ -60,34 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="register_med_max" classname="com.index.GeneralIndex" time="5.047">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.149&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0-ea&apos;&#10;Driver info: driver.version: RemoteWebDriver&#10;Capabilities {autoGrantPermissions: true, browserName: Chrome, databaseEnabled: false, desired: {autoGrantPermissions: true, browserName: Chrome, deviceName: TA09407DYT, newCommandTimeout: 600, noReset: false, platformName: Android, platformVersion: 6.0, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: motorola, deviceModel: XT1700, deviceName: HKE6GZ7D, deviceScreenSize: 720x1280, deviceUDID: HKE6GZ7D, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: false, platform: LINUX, platformName: LINUX, platformVersion: 6.0, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}&#10;Session ID: fe81c801-13a2-4973-8de0-be40f17f74f5" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
-Error communicating with the remote browser. It may have died.
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DELL-PC', ip: '192.168.1.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0-ea'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {autoGrantPermissions: true, browserName: Chrome, databaseEnabled: false, desired: {autoGrantPermissions: true, browserName: Chrome, deviceName: TA09407DYT, newCommandTimeout: 600, noReset: false, platformName: Android, platformVersion: 6.0, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: motorola, deviceModel: XT1700, deviceName: HKE6GZ7D, deviceScreenSize: 720x1280, deviceUDID: HKE6GZ7D, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: false, platform: LINUX, platformName: LINUX, platformVersion: 6.0, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: fe81c801-13a2-4973-8de0-be40f17f74f5
-	at com.index.GeneralIndex.register_med_max(GeneralIndex.java:1318)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at com.index.GeneralIndex.register_med_max(GeneralIndex.java:1318)
-</failure>
-    <system-out><![CDATA[[TestNG] [WARN] Could not find reporte class : listenReport.Reporter
-...
-... TestNG 6.8.9beta by Cédric Beust (cedric@beust.com)
-...
-
-======Abstract Page======
-======Abstract Page======
-TestData URL :: http://medmaxpharmacy.com/
-Current Window Handle ID : --->>CDwindow-0
-Current Xml Suite is:---->Med Max - Test Suite 1
-To verify that user is able to Register
---------------------------------------------------------------------------
-Step 1. open : http://medmaxpharmacy.com/
-]]></system-out>
-    <system-err><![CDATA[Sep 27, 2018 12:15:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-]]></system-err>
-  </testcase>
+  <testcase name="TC_DB_01" classname="com.index.GeneralIndex" time="699.365"/>
 </testsuite>

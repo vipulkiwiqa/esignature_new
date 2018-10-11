@@ -318,21 +318,18 @@ public class TestData {
 		return builder.toString();
 		}
 	
-	private static final String numberofdocuments = "24680";
+	private static final String numberofdocuments = "54321";
 	
 	public static String numberofducuments() {
-		/*int count=1;
+		int count=1;
 		StringBuilder builder = new StringBuilder();
 		while (count-- != 0) {
 		int character = (int)(Math.random()*numberofdocuments.length());
 		builder.append(numberofdocuments.charAt(character));
-		
-		}*/
-		
-		
-		StringBuilder builder = new StringBuilder();
+		}
+		/*StringBuilder builder = new StringBuilder();
 		int character = (int)(Math.random()*numberofdocuments.length());
-		builder.append(numberofdocuments.charAt(character));
+		builder.append(numberofdocuments.charAt(character));*/
 		return builder.toString();
 		}
 }

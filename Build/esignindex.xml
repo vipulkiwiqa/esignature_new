@@ -10,8 +10,8 @@
 
 	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
 		chrome 3) IExplorer : ie8 / ie9 -->
-	<!-- <parameter name="selenium.browser" value="chrome" /> --> <!-- for PC -->
-	<parameter name="selenium.browser" value="Android_Chrome" /> <!-- for mobile --> 
+	<parameter name="selenium.browser" value="chrome" /> <!-- for PC -->
+	<!-- <parameter name="selenium.browser" value="Android_Chrome" /> --> for mobile 
 
 	<!-- <parameter name="selenium.url" value="http://dashboard.staging.clearfunds.io/login" 
 		/> -->

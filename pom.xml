@@ -24,8 +24,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>Build/medmaxindex.xml</suiteXmlFile>
-						<!-- <suiteXmlFile>Build/esignindex.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>Build/medmaxindex.xml</suiteXmlFile> -->
+						<suiteXmlFile>Build/esignindex.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>Build/index.xml</suiteXmlFile>
 						<suiteXmlFile>Build/index1.xml</suiteXmlFile>
 						<suiteXmlFile>Build/index2.xml</suiteXmlFile> -->
