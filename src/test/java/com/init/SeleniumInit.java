@@ -33,6 +33,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.internal.Utils;
 import com.indexpage.GeneralIndexpage;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.utility.ExtentFactory;
 import com.verification.GeneralVerification;
 
 public class SeleniumInit {
@@ -63,6 +67,9 @@ public class SeleniumInit {
 	protected static Logger logger = Logger.getLogger("testing");
 	protected WebDriver driver;
 
+	public static ExtentReports report;//for the extented report
+	public static ExtentTest logger1; //for the extented report
+	
 	// Common Common = new Common(driver);
 
 	/* Page's declaration */
@@ -104,6 +111,14 @@ public class SeleniumInit {
 		screenshot_folder_path = new File(SCREENSHOT_FOLDER_NAME).getAbsolutePath();
 
 		DesiredCapabilities capability = null;
+		
+		
+		
+		
+		
+		logger1.log(LogStatus.INFO, "Chrome Browser Started");
+		
+		
 		if (targetBrowser == null || targetBrowser.contains("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "lib/geckodriver_0_21_0.exe");
 			FirefoxProfile profile = new FirefoxProfile();
@@ -212,9 +227,17 @@ public class SeleniumInit {
 			driver = new OperaDriver(capability);
 
 		} else if (targetBrowser.contains("chrome")) {
+			
 			ChromeOptions options = new ChromeOptions();
 			capability = DesiredCapabilities.chrome();
+			
+			
+			
 			System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");
+			
+			report=ExtentFactory.getInstance(); //for the extented report
+			logger1=report.startTest("Test Started"); //for the extented report
+			
 			
 			File chromeDriver;
 			
@@ -237,6 +260,8 @@ public class SeleniumInit {
 			options.addArguments("disable-geolocation");
 		
 			driver = new ChromeDriver();
+			
+			logger1.log(LogStatus.INFO, "Chrome Browser Started");
 			//driver = new RemoteWebDriver(remote_grid, capability);
 		} 
 		//Added for mobile 

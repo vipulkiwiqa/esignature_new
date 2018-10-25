@@ -56,25 +56,25 @@
       <![CDATA[<br><strong>Step 7. Enter Package Reference</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>--> Enter Packagereference :Packagereference_4jn5 <---]]>
+      <![CDATA[</br>--> Enter Packagereference :Packagereference_R4Tv <---]]>
     </line>
     <line>
       <![CDATA[<br><strong>Step 8. Enter First Name</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>--> Enter First Name :FirstnamemJJb <---]]>
+      <![CDATA[</br>--> Enter First Name :FirstnameuKuM <---]]>
     </line>
     <line>
       <![CDATA[<br><strong>Step 9. Enter Last Name</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>--> Enter Last Name :LastnameWiCv <---]]>
+      <![CDATA[</br>--> Enter Last Name :LastnamesojB <---]]>
     </line>
     <line>
       <![CDATA[<br><strong>Step 10. Enter Email Address</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>--> Enter Email Address :1L52@mailinator.com <---]]>
+      <![CDATA[</br>--> Enter Email Address :28Qw@mailinator.com <---]]>
     </line>
     <line>
       <![CDATA[<br><strong>Step 11. Enter Phone Number</strong></br>]]>
@@ -86,7 +86,7 @@
       <![CDATA[<br><strong>Step 12. Select WAFR Attachments</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>Number of Documents Attached :2]]>
+      <![CDATA[</br>Number of Documents Attached :3]]>
     </line>
     <line>
       <![CDATA[</br>Number of Options for the Attachment :5]]>
@@ -125,10 +125,13 @@
       <![CDATA[</br>-->  Attached Documents : Certificate of Insurance 1 * <--]]>
     </line>
     <line>
+      <![CDATA[</br>-->  Attached Documents : Certificate of Insurance 3 * <--]]>
+    </line>
+    <line>
       <![CDATA[</br>-->  Attached Documents : Transfer of Land * <--]]>
     </line>
     <line>
-      <![CDATA[<br><Strong><font color=#009000>--> Verified number of documents Attached:2 Verify the above documents list <--</font></strong></br>]]>
+      <![CDATA[<br><Strong><font color=#009000>--> Verified number of documents Attached:3 Verify the above documents list <--</font></strong></br>]]>
     </line>
     <line>
       <![CDATA[<br><Strong><font color=#009000>--> First Name and Last Name is confirmed <--</font></strong></br>]]>
@@ -146,7 +149,7 @@
       <![CDATA[<br><strong>Step 19. Enter email Address </strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>--> Enter Email Address :1L52@mailinator.com <---]]>
+      <![CDATA[</br>--> Enter Email Address :28Qw@mailinator.com <---]]>
     </line>
     <line>
       <![CDATA[<br><strong>Step 20. Click on GO! </strong></br>]]>
@@ -224,10 +227,25 @@
       <![CDATA[</br>Documents Uploaded]]>
     </line>
     <line>
+      <![CDATA[</br>clicked on cancel button]]>
+    </line>
+    <line>
+      <![CDATA[</br>clicked on printed signed]]>
+    </line>
+    <line>
+      <![CDATA[</br>clicked on ready to upload]]>
+    </line>
+    <line>
+      <![CDATA[</br>sends the file]]>
+    </line>
+    <line>
+      <![CDATA[</br>Documents Uploaded]]>
+    </line>
+    <line>
       <![CDATA[<br><strong>Step 34. Click on submit loan Documents</strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>Thank you for signing your documents, FirstnamemJJb LastnameWiCv!]]>
+      <![CDATA[</br>Thank you for signing your documents, FirstnameuKuM LastnamesojB!]]>
     </line>
     <line>
       <![CDATA[</br>Complete]]>
@@ -239,10 +257,10 @@
       <![CDATA[</br><br><Strong><font color=#008000>Pass</font></strong></br>]]>
     </line>
     <line>
-      <![CDATA[</br>package name :Packagereference_4jn5]]>
+      <![CDATA[</br>package name :Packagereference_R4Tv]]>
     </line>
     <line>
-      <![CDATA[</br>Packagereference_4jn5]]>
+      <![CDATA[</br>Packagereference_R4Tv]]>
     </line>
     <line>
       <![CDATA[</br>]]>
@@ -254,23 +272,23 @@
       <![CDATA[</br><br><Strong><font color=#008000>Pass</font></strong></br>]]>
     </line>
   </reporter-output>
-  <suite name="E-Signature - Test Suite 1" duration-ms="722436" started-at="2018-10-11T12:28:24Z" finished-at="2018-10-11T12:40:26Z">
+  <suite name="E-Signature - Test Suite 1" duration-ms="792899" started-at="2018-10-25T10:12:45Z" finished-at="2018-10-25T10:25:58Z">
     <groups>
     </groups>
-    <test name="Create a package using IBM Digital Contracts Demo v. 1 workflow  borrowe with Guarantor and relationship manager:: 01" duration-ms="722436" started-at="2018-10-11T12:28:24Z" finished-at="2018-10-11T12:40:26Z">
+    <test name="Create a package using IBM Digital Contracts Demo v. 1 workflow  borrowe with Guarantor and relationship manager:: 01" duration-ms="792899" started-at="2018-10-25T10:12:45Z" finished-at="2018-10-25T10:25:58Z">
       <class name="com.index.GeneralIndex">
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.index.GeneralIndex@457e2f02]" name="fetchSuiteConfiguration" is-config="true" duration-ms="9" started-at="2018-10-11T17:58:24Z" finished-at="2018-10-11T17:58:24Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.index.GeneralIndex@3b0143d3]" name="fetchSuiteConfiguration" is-config="true" duration-ms="10" started-at="2018-10-25T15:42:45Z" finished-at="2018-10-25T15:42:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7d9d1a19]]>
+                <![CDATA[org.testng.TestRunner@33c7e1bb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.index.GeneralIndex@457e2f02]" name="setUp" is-config="true" duration-ms="12357" started-at="2018-10-11T17:58:24Z" finished-at="2018-10-11T17:58:36Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.index.GeneralIndex@3b0143d3]" name="setUp" is-config="true" duration-ms="12829" started-at="2018-10-25T15:42:45Z" finished-at="2018-10-25T15:42:58Z">
           <params>
             <param index="0">
               <value>
@@ -279,14 +297,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7d9d1a19]]>
+                <![CDATA[org.testng.TestRunner@33c7e1bb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_DB_01()[pri:0, instance:com.index.GeneralIndex@457e2f02]" name="TC_DB_01" duration-ms="699365" started-at="2018-10-11T17:58:36Z" finished-at="2018-10-11T18:10:15Z">
+        <test-method status="PASS" signature="TC_DB_01()[pri:0, instance:com.index.GeneralIndex@3b0143d3]" name="TC_DB_01" duration-ms="769353" started-at="2018-10-25T15:42:58Z" finished-at="2018-10-25T15:55:47Z">
           <reporter-output>
             <line>
               <![CDATA[<strong> <h3 style="color:DarkViolet"> To verify that user is able to login with valid credentials</h3> </strong>]]>
@@ -343,25 +361,25 @@
               <![CDATA[<br><strong>Step 7. Enter Package Reference</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>--> Enter Packagereference :Packagereference_4jn5 <---]]>
+              <![CDATA[</br>--> Enter Packagereference :Packagereference_R4Tv <---]]>
             </line>
             <line>
               <![CDATA[<br><strong>Step 8. Enter First Name</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>--> Enter First Name :FirstnamemJJb <---]]>
+              <![CDATA[</br>--> Enter First Name :FirstnameuKuM <---]]>
             </line>
             <line>
               <![CDATA[<br><strong>Step 9. Enter Last Name</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>--> Enter Last Name :LastnameWiCv <---]]>
+              <![CDATA[</br>--> Enter Last Name :LastnamesojB <---]]>
             </line>
             <line>
               <![CDATA[<br><strong>Step 10. Enter Email Address</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>--> Enter Email Address :1L52@mailinator.com <---]]>
+              <![CDATA[</br>--> Enter Email Address :28Qw@mailinator.com <---]]>
             </line>
             <line>
               <![CDATA[<br><strong>Step 11. Enter Phone Number</strong></br>]]>
@@ -373,7 +391,7 @@
               <![CDATA[<br><strong>Step 12. Select WAFR Attachments</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>Number of Documents Attached :2]]>
+              <![CDATA[</br>Number of Documents Attached :3]]>
             </line>
             <line>
               <![CDATA[</br>Number of Options for the Attachment :5]]>
@@ -412,10 +430,13 @@
               <![CDATA[</br>-->  Attached Documents : Certificate of Insurance 1 * <--]]>
             </line>
             <line>
+              <![CDATA[</br>-->  Attached Documents : Certificate of Insurance 3 * <--]]>
+            </line>
+            <line>
               <![CDATA[</br>-->  Attached Documents : Transfer of Land * <--]]>
             </line>
             <line>
-              <![CDATA[<br><Strong><font color=#009000>--> Verified number of documents Attached:2 Verify the above documents list <--</font></strong></br>]]>
+              <![CDATA[<br><Strong><font color=#009000>--> Verified number of documents Attached:3 Verify the above documents list <--</font></strong></br>]]>
             </line>
             <line>
               <![CDATA[<br><Strong><font color=#009000>--> First Name and Last Name is confirmed <--</font></strong></br>]]>
@@ -433,7 +454,7 @@
               <![CDATA[<br><strong>Step 19. Enter email Address </strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>--> Enter Email Address :1L52@mailinator.com <---]]>
+              <![CDATA[</br>--> Enter Email Address :28Qw@mailinator.com <---]]>
             </line>
             <line>
               <![CDATA[<br><strong>Step 20. Click on GO! </strong></br>]]>
@@ -511,10 +532,25 @@
               <![CDATA[</br>Documents Uploaded]]>
             </line>
             <line>
+              <![CDATA[</br>clicked on cancel button]]>
+            </line>
+            <line>
+              <![CDATA[</br>clicked on printed signed]]>
+            </line>
+            <line>
+              <![CDATA[</br>clicked on ready to upload]]>
+            </line>
+            <line>
+              <![CDATA[</br>sends the file]]>
+            </line>
+            <line>
+              <![CDATA[</br>Documents Uploaded]]>
+            </line>
+            <line>
               <![CDATA[<br><strong>Step 34. Click on submit loan Documents</strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>Thank you for signing your documents, FirstnamemJJb LastnameWiCv!]]>
+              <![CDATA[</br>Thank you for signing your documents, FirstnameuKuM LastnamesojB!]]>
             </line>
             <line>
               <![CDATA[</br>Complete]]>
@@ -526,10 +562,10 @@
               <![CDATA[</br><br><Strong><font color=#008000>Pass</font></strong></br>]]>
             </line>
             <line>
-              <![CDATA[</br>package name :Packagereference_4jn5]]>
+              <![CDATA[</br>package name :Packagereference_R4Tv]]>
             </line>
             <line>
-              <![CDATA[</br>Packagereference_4jn5]]>
+              <![CDATA[</br>Packagereference_R4Tv]]>
             </line>
             <line>
               <![CDATA[</br>]]>
@@ -542,11 +578,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- TC_DB_01 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.index.GeneralIndex@457e2f02]" name="tearDown" is-config="true" duration-ms="10694" started-at="2018-10-11T18:10:15Z" finished-at="2018-10-11T18:10:26Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.index.GeneralIndex@3b0143d3]" name="tearDown" is-config="true" duration-ms="10689" started-at="2018-10-25T15:55:47Z" finished-at="2018-10-25T15:55:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_DB_01 status=SUCCESS method=GeneralIndex.TC_DB_01()[pri:0, instance:com.index.GeneralIndex@457e2f02] output=<strong> <h3 style="color:DarkViolet"> To verify that user is able to login with valid credentials</h3> </strong>]]]>
+                <![CDATA[[TestResult name=TC_DB_01 status=SUCCESS method=GeneralIndex.TC_DB_01()[pri:0, instance:com.index.GeneralIndex@3b0143d3] output=<strong> <h3 style="color:DarkViolet"> To verify that user is able to login with valid credentials</h3> </strong>]]]>
               </value>
             </param>
           </params>
